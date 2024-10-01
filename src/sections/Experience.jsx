@@ -12,7 +12,7 @@ const WorkExperience = () => {
   return (
     <section className="c-space my-20" id="work">
       <div className="w-full text-white-600">
-        <p className="head-text">My Work Experience</p>
+        <p className="head-text">My Professionnel Experience</p>
 
         <div className="work-container">
           <div className="work-canvas">
@@ -46,7 +46,11 @@ const WorkExperience = () => {
                 >
                   <div className="flex flex-col h-full justify-start items-center py-2">
                     <div className="work-content_logo">
-                      <img className="w-full h-full" src={item.icon} alt="" />
+                      <img
+                        className="w-full h-full rounded-2xl"
+                        src={item.icon}
+                        alt=""
+                      />
                     </div>
 
                     <div className="work-content_bar" />

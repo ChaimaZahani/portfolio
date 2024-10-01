@@ -6,12 +6,14 @@ import Projects from "./sections/Projects.jsx";
 import Contact from "./sections/Contact.jsx";
 import WorkExperience from "./sections/Experience.jsx";
 import Footer from "./sections/Footer.jsx";
+import Sphere from "./components/Sphere.jsx";
 const App = () => {
   return (
     <main className="max-w-7xl mx-auto">
       <Navbar />
+      <Sphere />
 
-      <Hero />
+      {/* <Hero /> */}
       <About />
       <Projects />
       <WorkExperience />
