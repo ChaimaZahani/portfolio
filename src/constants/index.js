@@ -29,13 +29,13 @@ export const myProjects = [
     desc: "Développé un système de comptage de personnes en temps réel pour le commerce de détail.",
     subdesc:
       "Utilized YOLOv8, OpenVINO, BoT-SORT, Angular, Strapi, Python, Typescript, Docker, Kubernetes, MongoDB, PostgreSQL and Jenkins.",
-    logo: "/assets/project-logo10.png",
+    logo: "/assets/tick.svg",
     logoStyle: {
       backgroundColor: "#F0F0F0",
       border: "0.2px solid #CCCCCC",
       boxShadow: "0px 0px 60px 0px rgba(0, 0, 0, 0.1)",
     },
-    spotlight: "/assets/spotlight10.png",
+    spotlight: "/assets/spotlight1.png",
     tags: [
       {
         id: 1,
@@ -164,7 +164,7 @@ export const myProjects = [
       border: "0.2px solid #CCCCCC",
       boxShadow: "0px 0px 60px 0px rgba(0, 0, 0, 0.1)",
     },
-    spotlight: "/assets/spotlight9.png",
+    spotlight: "/assets/spotlight1.png",
     tags: [
       { id: 1, name: "Blockchain", path: "/assets/blockchain.svg" },
       { id: 2, name: "MERN", path: "/assets/mern_logo.svg" },
