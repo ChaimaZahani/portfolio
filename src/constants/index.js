@@ -26,7 +26,7 @@ export const myProjects = [
   {
     title:
       "Projet de Fin d’Études: Développement d’une Application de Comptage de Personnes",
-    desc: "Développé un système de comptage de personnes en temps réel pour le commerce de détail.",
+    desc: "Développer un système de comptage de personnes en temps réel pour le commerce de détail.",
     subdesc:
       "Utilized YOLOv8, OpenVINO, BoT-SORT, Angular, Strapi, Python, Typescript, Docker, Kubernetes, MongoDB, PostgreSQL and Jenkins.",
     logo: "/assets/tick.svg",
