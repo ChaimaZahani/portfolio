@@ -6,7 +6,11 @@ const NavItems = ({ onClick = () => {} }) => (
   <ul className="nav-ul">
     {navLinks.map((item) => (
       <li key={item.id} className="nav-li">
-        <a href={item.href} className="nav-li_a" onClick={onClick}>
+        <a
+          href={item.href}
+          className="nav-li_a  text-2xl hover:text-white transition-colors"
+          onClick={onClick}
+        >
           {item.name}
         </a>
       </li>
@@ -26,7 +30,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center py-5 mx-auto c-space">
           <a
             href="/"
-            className="text-neutral-400 font-bold text-xl hover:text-white transition-colors"
+            className="text-neutral-400 font-bold text-2xl hover:text-white transition-colors"
           >
             Chaima
           </a>

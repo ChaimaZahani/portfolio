@@ -8,7 +8,7 @@ function Word({ children, ...props }) {
   const color = new THREE.Color();
   const fontProps = {
     font: "/Inter-Bold.woff",
-    fontSize: 2.5,
+    fontSize: 2,
     letterSpacing: -0.05,
     lineHeight: 1,
     "material-toneMapped": false,
@@ -43,8 +43,50 @@ function Word({ children, ...props }) {
   );
 }
 
-function Cloud({ count = 4, radius = 20 }) {
-  // Create a count x count random words with spherical distribution
+function Cloud({ count = 8, radius = 20 }) {
+  const customWords = [
+    "DevOps",
+    "Angular",
+    "Python",
+    "Kubernetes",
+    "Docker",
+    "CI/CD",
+    "React",
+    "PostgreSQL",
+    "MongoDB",
+    "Three.js",
+    "Terraform",
+    "Machine Learning",
+    "Typescript",
+    "Linux",
+    "Cloud",
+    "SpringBoot",
+    "Helm",
+    "Strapi",
+    "Node.js",
+    "Ansible",
+    "Gitlab",
+    "Jira",
+    "Gitlab-CI",
+    "Vite",
+    "Express",
+    "Solidity",
+    "C++",
+    "Computer Vision",
+    "OpenVINO",
+    "BoT-SORT",
+    "YOLOv8",
+    "Blockchain",
+    "Deep Learning",
+    "Web Development",
+    "Frontend",
+    "Backend",
+    "Microservices",
+    "API Integration",
+    "Containerization",
+    "Automation",
+    "Cloud Infrastructure",
+  ];
   const words = useMemo(() => {
     const temp = [];
     const spherical = new THREE.Spherical();
@@ -56,7 +98,7 @@ function Cloud({ count = 4, radius = 20 }) {
           new THREE.Vector3().setFromSpherical(
             spherical.set(radius, phiSpan * i, thetaSpan * j)
           ),
-          generate(),
+          customWords[(i * count + j) % customWords.length],
         ]);
     return temp;
   }, [count, radius]);

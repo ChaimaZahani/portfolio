@@ -14,6 +14,7 @@ import HeroCamera from "../components/HeroCamera.jsx";
 import { calculateSizes } from "../constants/index.js";
 import { HackerRoom } from "../components/HackerRoom.jsx";
 import { TypeAnimation } from "react-type-animation";
+import Sphere from "../components/Sphere.jsx";
 
 const Hero = () => {
   // Use media queries to determine screen size
@@ -45,10 +46,9 @@ const Hero = () => {
         {/* <p className="hero_tag text-gray_gradient">Computer Science Engineer</p> */}
       </div>
 
-      <div className="w-full h-full absolute inset-0">
+      {/* <div className="w-full h-full absolute inset-0">
         <Canvas className="w-full h-full">
           <Suspense fallback={<CanvasLoader />}>
-            {/* To hide controller */}
             <Leva hidden />
             <PerspectiveCamera makeDefault position={[0, 0, 30]} />
 
@@ -71,9 +71,9 @@ const Hero = () => {
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
           </Suspense>
         </Canvas>
-      </div>
+      </div> */}
 
-      <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
+      {/* <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
         <a href="#about" className="w-fit">
           <Button
             name="Let's work together"
@@ -81,6 +81,11 @@ const Hero = () => {
             containerClass="sm:w-fit w-full sm:min-w-96"
           />
         </a>
+      </div> */}
+      <div style={{ height: "90vh" }}>
+        {" "}
+        {/* Adjust these values for size */}
+        <Sphere />
       </div>
     </section>
   );
