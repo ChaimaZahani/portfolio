@@ -1,8 +1,4 @@
-# Portfolio 
 
-[View Live Portfolio](https://portfolio-git-master-chaimazhs-projects.vercel.app)
-
-Welcome to my personal portfolio! This website showcases my skills, experience, and a selection of projects that demonstrate my capabilities as a software engineer.
 
 ## 🔗 About the Portfolio
 
